@@ -1,13 +1,28 @@
 {
   "name": "mocha-test-options",
   "version": "1.0.0",
-  "description": "",
+  "description": "Extend Mocha BDD to provide test options",
+  "keywords": [
+    "mocha",
+    "test",
+    "bdd",
+    "extend",
+    "options",
+    "tags"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Nazar Hussain",
-  "license": "ISC",
+  "author": "Nazar Hussain <nazarhussain@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nazarhussain/mocha-test-options.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nazarhussain/mocha-test-options/issues"
+  },
   "dependencies": {
     "mocha": "~2.3.3",
     "escape-string-regexp": "~1.0.3"
