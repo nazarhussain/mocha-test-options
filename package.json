@@ -1,0 +1,15 @@
+{
+  "name": "mocha-test-options",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nazar Hussain",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "~2.3.3",
+    "escape-string-regexp": "~1.0.3"
+  }
+}
