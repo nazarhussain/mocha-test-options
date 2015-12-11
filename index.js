@@ -75,7 +75,10 @@ module.exports = Mocha.interfaces['test-options'] = function(suite) {
 
       if(typeof(options) === 'function' && fn == undefined){
         fn = options;
-        options = {}
+        options = {};
+      } else if (typeof(options) === 'object' && fn === null){
+        fn = undefined;
+        options = {};
       }
 
       if (suite.pending) {
@@ -99,8 +102,11 @@ module.exports = Mocha.interfaces['test-options'] = function(suite) {
      * Pending test case.
      */
 
-    context.xit = context.xspecify = context.it.skip = function(title, options) {
-      context.it(title, options);
+    context.xit = context.xspecify = context.it.skip = function(title, options, fn) {
+      if(typeof(options) === 'function' && fn == undefined){
+        options = {}
+      }
+      context.it(title, options, null);
     };
   });
 };
