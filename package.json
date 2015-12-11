@@ -1,6 +1,6 @@
 {
   "name": "mocha-test-options",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extend Mocha BDD to provide test options",
   "keywords": [
     "mocha",
@@ -12,7 +12,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec --slow 200 --timeout 10000 --require ./index.js --ui index --check-leaks ./test/**/*.test.js"
   },
   "author": "Nazar Hussain <nazarhussain@gmail.com>",
   "license": "MIT",
@@ -24,7 +24,11 @@
     "url": "https://github.com/nazarhussain/mocha-test-options/issues"
   },
   "dependencies": {
-    "mocha": "~2.3.3",
-    "escape-string-regexp": "~1.0.3"
+    "chai": "^3.4.1",
+    "escape-string-regexp": "~1.0.3",
+    "mocha": "~2.3.3"
+  },
+  "directories": {
+    "test": "test"
   }
 }

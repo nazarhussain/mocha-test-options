@@ -41,7 +41,13 @@ module.exports = Mocha.interfaces['test-options'] = function(suite) {
      */
 
     context.xdescribe = context.xcontext = context.describe.skip = function(title, options, fn) {
-      var suite = Suite.create(suites[0], options, title);
+      if(typeof(options) === 'function' && fn == undefined){
+        fn = options;
+        options = {}
+      }
+
+      var suite = Suite.create(suites[0], title);
+      suite.testOptions = options;
       suite.pending = true;
       suites.unshift(suite);
       fn.call(suite);
