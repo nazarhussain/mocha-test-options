@@ -2,6 +2,9 @@
 
 > Extend BDD Interfaces for Mocha to provide test options
 
+[![Build Status](https://travis-ci.org/nazarhussain/mocha-test-options.svg?branch=master)](https://travis-ci.org/nazarhussain/mocha-test-options) 
+[![Code Climate](https://codeclimate.com/github/nazarhussain/mocha-test-options/badges/gpa.svg)](https://codeclimate.com/github/nazarhussain/mocha-test-options)
+
 In normal scenario you can set some variables/propertiess in `beforeEach` using `this.attribute = 'something'` and later can used it inside test cases. But in a scenario if you need to set some option in test and want to access it in `before` or `beforeEach` then this package will help you out.
 
 ### Setup
