@@ -1,6 +1,6 @@
 {
   "name": "mocha-test-options",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Extend Mocha BDD to provide test options",
   "keywords": [
     "mocha",
@@ -24,9 +24,9 @@
     "url": "https://github.com/nazarhussain/mocha-test-options/issues"
   },
   "dependencies": {
-    "chai": "^3.4.1",
+    "chai": "^3.5.0",
     "escape-string-regexp": "~1.0.3",
-    "mocha": "~2.3.3"
+    "mocha": "~2.4.5"
   },
   "directories": {
     "test": "test"

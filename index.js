@@ -108,5 +108,12 @@ module.exports = Mocha.interfaces['test-options'] = function(suite) {
       }
       context.it(title, options, null);
     };
+
+    /**
+     * Number of attempts to retry.
+     */
+    context.it.retries = function(n) {
+      context.retries(n);
+    };
   });
 };
